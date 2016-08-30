@@ -1,0 +1,30 @@
+{
+  "name": "cycle-isolate-repro",
+  "description": "Test case for a cyclejs DOM isolate bug.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Max Goodman",
+    "email": "c@chromakode.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --content-base public/ --hot --hot-only --inline"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@cycle/dom": "^12.2.2",
+    "@cycle/isolate": "^1.4.0",
+    "@cycle/xstream-run": "^3.1.0",
+    "snabbdom-jsx": "^0.3.1",
+    "snabbdom": "chromakode/snabbdom#fix-attribute-removal",
+    "xstream": "^6.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  }
+}
